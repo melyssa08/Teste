@@ -8,6 +8,10 @@ app.use(cors({
     origin: '*'
 }))
 
+app.get('/', function (req, res) {
+    res.send('OLÁ MUNDO, O TESTE FUNCIONA')
+})
+
 app.listen(port, hostname, function () {
-    console.log(`http://${hostname}:${port}`)
+    console.log(`http://${hostname}:${port}/`)
 })
